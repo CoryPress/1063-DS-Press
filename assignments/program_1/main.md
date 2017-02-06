@@ -2,10 +2,10 @@
 * @ProgramName: Program-1
 * @Author: Cory Press
 * @Description:
-*	This program reads in images stored as rgb values in a space delimited file format. Then 
-*	it will ask the user what they like to do the image, either flip it horizontally or vertically,
-*	or grayscale it. It will then aply the chosen effect and store the new rbg valuse in a new
-*	space delimited file.
+	This program reads in images stored as rgb values in a space delimited file format. Then 
+	it will ask the user what they like to do the image, either flip it horizontally or vertically,
+	or grayscale it. It will then aply the chosen effect and store the new rbg valuse in a new
+	space delimited file.
 * @Course: 1063 Data Structures
 * @Semester: Spring 2017
 * @Date: 05 02 2017
@@ -30,22 +30,26 @@ struct rgb{
 /**
 * @FunctionName: flipVert
 * @Description:
-*	Loops through a 2D array and switches each rgb value with the rgb value mirrored across
-*    the middle column of the image.
+	Loops through a 2D array and switches each rgb value with the rgb value mirrored across
+	the middle column of the image.
 * @Params:
-*    rgb** image - 2D array holding rgb values
-*    int width - width of image
-*    int height - height of image
+	rgb** image - 2D array holding rgb values
+	int width - width of image
+	int height - height of image
 * @Returns:
-*    void
+	void
 */
+
 void flipVert(rgb** image, int width, int height)
 {
+	
 	rgb Temp;
 	for (int i = 0; i <= height/2 ; i++)
 	{
-		for (int j = 0; j <= width; j++)
+		
+		for (int j = 0; j <= width; j++
 		{
+			
 			Temp.r = image[i][j].r;
 			Temp.g = image[i][j].g;
 			Temp.b = image[i][j].b;
@@ -62,22 +66,26 @@ void flipVert(rgb** image, int width, int height)
 /**
 * @FunctionName: flipHorz
 * @Description:
-*	Loops through a 2D array and switches each rgb value with the rgb value mirrored across
-*    the middle row of the image. 
+	Loops through a 2D array and switches each rgb value with the rgb value mirrored across
+	the middle row of the image. 
 * @Params:
-*    rgb** image - 2D array holding rgb values
-*    int width - width of image
-*    int height - height of image
+	rgb** image - 2D array holding rgb values
+	int width - width of image
+	int height - height of image
 * @Returns:
-*    void
+	void
 */
+
 void flipHorz(rgb** image, int width, int height)
 {
+	
 	rgb Temp;
 	for (int i = 0; i < height; i++)
 	{
+		
 		for (int j = 0; j <= width/2; j++)
 		{
+			
 			Temp.r = image[i][j].r;
 			Temp.g = image[i][j].g;
 			Temp.b = image[i][j].b;
@@ -94,29 +102,35 @@ void flipHorz(rgb** image, int width, int height)
 /**
 * @FunctionName: grayScale
 * @Description:
-*     Loops through a 2D array and turns every RGB value into its grayscale equivalent.
+	Loops through a 2D array and turns every RGB value into its grayscale equivalent.
 * @Params:
-*    rgb** image - 2D array holding rgb values
-*    int width - width of image
-*    int height - height of image
+	rgb** image - 2D array holding rgb values
+	int width - width of image
+	int height - height of image
 * @Returns:
-*    void
+	void
 */
+
 void grayScale(rgb** image, int width, int height)
 {
+	
 	int Grey;
 	for (int i = 0; i < height; i++)
 	{
+		
 		for (int j = 0; j < width; j++)
 		{
+			
 			Grey = (image[i][j].r + image[i][j].g + image[i][j].b) / 3;
 			image[i][j].r = image[i][j].g = image[i][j].b = Grey;
 		}
 	}
 }
 
+
 int main()
 {
+	
 	ifstream ifile;          //Input / output files
 	ofstream ofile;
 	ifile.open("Image.txt");
