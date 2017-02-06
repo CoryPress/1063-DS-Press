@@ -21,7 +21,10 @@ using namespace std;
 /**
 Structure to hold an rgb value
 */
-struct rgb{
+
+struct rgb
+{
+
 	int r;
 	int g;
 	int b;
