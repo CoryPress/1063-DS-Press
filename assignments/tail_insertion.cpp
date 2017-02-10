@@ -1,4 +1,4 @@
-```
+
 /**
 * @ProgramName: Tail Insertion
 * @Author: Cory Press
@@ -120,4 +120,3 @@ int main() {
 	L.PrintList();
 	return 0;
 }
-```
