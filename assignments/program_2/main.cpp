@@ -1,4 +1,4 @@
-```
+
 /**
 * @ProgramName: Program-1
 * @Author: Cory Press
@@ -183,4 +183,4 @@ int main(){
 	MyImage.writeFile();
 
 }
-```
+
