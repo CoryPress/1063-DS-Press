@@ -1,6 +1,6 @@
-
+```
 /**
-* @ProgramName: Program-1
+* @ProgramName: Program-2
 * @Author: Cory Press
 * @Description:
 *	This program creates a class, which was the ability to read in an image as rgb values from
@@ -9,7 +9,7 @@
 *   a space delimited file format.
 * @Course: 1063 Data Structures
 * @Semester: Spring 2017
-* @Date: 05 02 2017
+* @Date: 15 02 2017
 */
 
 #include<iostream>
@@ -183,4 +183,4 @@ int main(){
 	MyImage.writeFile();
 
 }
-
+```
