@@ -1,4 +1,4 @@
-```
+
 /**
 * @Homework: Homework-3
 * @Author: Cory Press
@@ -121,4 +121,3 @@ int main() {
 	system("pause");
 	return 0;
 }
-```
