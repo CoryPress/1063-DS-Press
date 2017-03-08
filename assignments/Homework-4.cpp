@@ -1,4 +1,3 @@
-```
 /**
 * @ProgramName: Binary Search
 * @Author: Cory Press
@@ -181,4 +180,3 @@ int main(){
 
 	return 0;
 }
-```
