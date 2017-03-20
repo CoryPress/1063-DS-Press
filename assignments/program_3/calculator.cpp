@@ -349,22 +349,22 @@ private:
 				y = S2->Pop();
 				switch ((int)Temp){
 					case 43:
-						answer = x+y;
+						answer = y+x;
 						break;
 					case 45:
 						answer = y-x;
 						break;
 					case 37:
-						answer = fmod(x,y);
+						answer = fmod(y,x);
 						break;
 					case 42:
-						answer = x*y;
+						answer = y*x;
 						break;
 					case 47:
 						answer = y/x;
 						break;
 					case 94:
-						answer = pow(x,y);
+						answer = pow(y,x);
 						break;
 					default:
 						break;
