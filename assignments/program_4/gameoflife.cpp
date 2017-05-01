@@ -1,4 +1,3 @@
-```
 /**
 * @ProgramName: program_4
 * @Author: Cory Press
@@ -274,4 +273,3 @@ int main(){
     G.Run(100);
     return 0;
 }
-```
